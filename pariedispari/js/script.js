@@ -28,7 +28,7 @@ btnAvviaEl.addEventListener('click', function() {
   userNumber = parseInt(userNumberEl.value);
   userSelect = parseInt(userSelectEl.value);
   numCpu = numRandom(NUM_MIN, NUM_MAX);
-  somma = userNumber + numCpu;
+  somma = userNumber + numCpu;*
 
   if (isEven(somma) == userSelect){
     resultEl.innerHTML = 'Hai Vinto!';
