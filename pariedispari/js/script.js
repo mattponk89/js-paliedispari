@@ -14,8 +14,7 @@ var numCpu = 0;
 var somma = 0;
 
 function numRandom(num1, num2){
-   var numRandom = Math.floor(Math.random() * 5) + 1;
-  return numRandom;
+  return Math.floor(Math.random() * 5) + 1;
 }
 
 function isEven(number){
@@ -28,7 +27,7 @@ btnAvviaEl.addEventListener('click', function() {
   userNumber = parseInt(userNumberEl.value);
   userSelect = parseInt(userSelectEl.value);
   numCpu = numRandom(NUM_MIN, NUM_MAX);
-  somma = userNumber + numCpu;*
+  somma = userNumber + numCpu;
 
   if (isEven(somma) == userSelect){
     resultEl.innerHTML = 'Hai Vinto!';
